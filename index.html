@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <title>Aprende D3</title>
+        <script src="https://d3js.org/d3.v6.min.js"></script>    
+    </head>
+<body>
+
+<h2>Aprende D3</h2>
+
+<p>Este ejemplo lo sacamos de <a href="https://www.tutorialsteacher.com/codeeditor?cid=d3-20">aquí.</a></p>
+
+<p id="demo"></p>
+
+<script>
+var svg = d3.select("body")
+        .append("svg")
+        .attr("width", 500)
+        .attr("height", 500);
+
+
+    var bar1 = svg.append("rect")
+        .attr("fill", "blue")
+        .attr("x", 100)
+        .attr("y", 20)
+        .attr("height", 20)
+        .attr("width", 10)
+
+    var bar2 = svg.append("rect")
+        .attr("fill", "blue")
+        .attr("x", 120)
+        .attr("y", 20)
+        .attr("height", 20)
+        .attr("width", 10)
+
+    update();
+
+function update() {
+    bar1.transition()
+        .ease(d3.easeLinear)
+        .duration(2000)
+        .attr("height",100)
+
+    bar2.transition()
+        .ease(d3.easeLinear)
+        .duration(2000)
+        .delay(2000)
+        .attr("height",100)
+};
+</script>
+
+</body>
+</html>
