@@ -2,7 +2,7 @@ mutants:
 	yarn
 	yarn workspace bubbles stryker run
 
-.PHONY: clean mutants tests
+.PHONY: clean format mutants tests
 
 clean: 
 	rm --force --recursive node_modules
@@ -13,3 +13,6 @@ clean:
 tests:
 	yarn
 	yarn test -u
+
+format:
+	npx standard bubbles/**/*.js
