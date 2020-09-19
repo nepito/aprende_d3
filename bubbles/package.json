@@ -12,6 +12,7 @@
   "devDependencies": {
     "@stryker-mutator/core": "^3.1.0",
     "@stryker-mutator/jest-runner": "^3.1.0",
-    "@stryker-mutator/javascript-mutator": "^3.1.0"
+    "@stryker-mutator/javascript-mutator": "^3.1.0",
+    "standard": "^14.3.4"
   }
 }
