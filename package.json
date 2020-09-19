@@ -1,0 +1,11 @@
+{
+  "name": "aprende_d3",
+  "private": true,
+  "license": "ISC",
+  "scripts": {
+    "test": "yarn workspace bubbles test"
+  },
+  "workspaces": [
+    "bubbles"
+  ]
+}
